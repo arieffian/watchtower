@@ -1,6 +1,6 @@
-module github.com/containrrr/watchtower
+module github.com/arieffian/watchtower
 
-go 1.25
+go 1.25.0
 
 require (
 	github.com/containrrr/shoutrrr v0.8.0
@@ -8,6 +8,7 @@ require (
 	github.com/docker/cli v29.3.1+incompatible
 	github.com/docker/docker v28.5.2+incompatible
 	github.com/docker/go-connections v0.4.0
+	github.com/moby/docker-image-spec v1.3.1
 	github.com/onsi/ginkgo v1.16.5
 	github.com/onsi/gomega v1.30.0
 	github.com/prometheus/client_golang v1.18.0
@@ -28,7 +29,6 @@ require (
 	github.com/go-logr/logr v1.4.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/matttproud/golang_protobuf_extensions/v2 v2.0.0 // indirect
-	github.com/moby/docker-image-spec v1.3.1 // indirect
 	github.com/moby/sys/atomicwriter v0.1.0 // indirect
 	go.opentelemetry.io/auto/sdk v1.2.1 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.67.0 // indirect

@@ -11,10 +11,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/containrrr/watchtower/internal/meta"
-	"github.com/containrrr/watchtower/pkg/registry/auth"
-	"github.com/containrrr/watchtower/pkg/registry/manifest"
-	"github.com/containrrr/watchtower/pkg/types"
+	"github.com/arieffian/watchtower/internal/meta"
+	"github.com/arieffian/watchtower/pkg/registry/auth"
+	"github.com/arieffian/watchtower/pkg/registry/manifest"
+	"github.com/arieffian/watchtower/pkg/types"
 	"github.com/sirupsen/logrus"
 )
 

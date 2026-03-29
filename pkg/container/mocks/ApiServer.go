@@ -3,18 +3,19 @@ package mocks
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/onsi/ginkgo"
 	"net/http"
 	"net/url"
 	"os"
 	"path/filepath"
 	"strings"
 
-	t "github.com/containrrr/watchtower/pkg/types"
+	"github.com/onsi/ginkgo"
+
+	t "github.com/arieffian/watchtower/pkg/types"
 
 	"github.com/docker/docker/api/types"
-	dockerimage "github.com/docker/docker/api/types/image"
 	"github.com/docker/docker/api/types/filters"
+	dockerimage "github.com/docker/docker/api/types/image"
 	O "github.com/onsi/gomega"
 	"github.com/onsi/gomega/ghttp"
 )
