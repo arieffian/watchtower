@@ -1,17 +1,27 @@
-<!--
+# Merge/Pull Request (PR)  
 
-Thank you for contributing to the watchtower project! 🙏
+**Jenis PR** :  
 
-We truly appreciate all the contributions we get from the community.
+- [ ] Fitur Baru  
+- [ ] Bug Fix  
+- [ ] Lain :  
 
-To make your PR experience as smooth as possible, make sure that you
-include the following in your PR:
+**Penjelasan PR** :  
 
-- What your PR contributes
-- Which issues it solves (preferrably using auto closing instructions like "closes #123".
-- Tests that verify the code your contributing
-- Updates to the documentation
+- *contoh* PR ini untuk implementasi story MB-123  
+- *contoh* Termasuk perbaikan ke module dompetSayaKosong.go  
 
-Thank you again! ✨
+**Test yang _sudah_ dilakukan terhadap code dalam PR ini** :  
 
--->
+- [ ] `make test` : pass  
+- [ ] `make lint` : pass  
+- [ ] `make build` : success  
+- [ ] Testing lain: _isi_  
+**Wajib dilakukan sebelum merge**  
+
+**Bagaimana caranya melakukan test terhadap PR ini** :  
+
+1. *contoh* clone dulu: `git clone git@github.com:medbook-project/providers.git` project  
+2. *contoh* salin `cp env.example .env`  
+3. *contoh* `make build` untuk install semua dependency dan library  
+4. *contoh* `curl ke 0.0.0.0:3000/fiturA` untuk test fitur A  
