@@ -11,9 +11,9 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/containrrr/watchtower/pkg/api"
-	metricsAPI "github.com/containrrr/watchtower/pkg/api/metrics"
-	"github.com/containrrr/watchtower/pkg/metrics"
+	"github.com/arieffian/watchtower/pkg/api"
+	metricsAPI "github.com/arieffian/watchtower/pkg/api/metrics"
+	"github.com/arieffian/watchtower/pkg/metrics"
 )
 
 const (

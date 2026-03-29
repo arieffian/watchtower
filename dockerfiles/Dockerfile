@@ -10,9 +10,10 @@ COPY go.mod go.sum ./
 RUN go mod download
 
 COPY . .
-RUN CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH GOARM=${TARGETVARIANT#v} \
+RUN if [ -n "$TARGETVARIANT" ]; then export GOARM="${TARGETVARIANT#v}"; fi && \
+    CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH \
     go build \
-    -ldflags="-s -w -X github.com/containrrr/watchtower/internal/meta.Version=${VERSION}" \
+    -ldflags="-s -w -X github.com/arieffian/watchtower/internal/meta.Version=${VERSION}" \
     -o watchtower ./main.go
 
 FROM --platform=$BUILDPLATFORM alpine:3.19.0 AS alpine

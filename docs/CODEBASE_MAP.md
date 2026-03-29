@@ -367,7 +367,7 @@ sequenceDiagram
 ## Conventions
 
 - **Go version:** 1.21 (see `go.mod`)
-- **Module path:** `github.com/containrrr/watchtower`
+- **Module path:** `github.com/arieffian/watchtower`
 - **Test framework:** Ginkgo v1 (BDD) + Gomega matchers; some packages use `testify/assert`
 - **Logging:** `logrus` with UTC JSON format
 - **CLI:** Cobra + Viper; all flags have env-var equivalents via `viper.MustBindEnv`
